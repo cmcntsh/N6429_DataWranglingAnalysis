@@ -1,0 +1,10 @@
+field_name,definition,data_type,allowed_or_expected_values
+record_id,Synthetic row identifier; duplicate values indicate duplicated source rows,text,Q001-Q040
+patient_id,Synthetic patient identifier,text,P001-P030
+clinic,Clinic name,text,Northside Clinic; Riverbend Clinic; Mountain View Clinic
+referral_service,Service requested at referral,text,Medication review; Social work; Nutrition; Care coordination
+referral_date,Date referral was created,date,Normalize to YYYY-MM-DD
+due_date,Due date assigned by the fictional program,date,Normalize to YYYY-MM-DD
+completion_date,Date follow-up was completed; blank means not completed at the snapshot,date or missing,Normalize to YYYY-MM-DD
+social_needs_flag,Synthetic indicator that one or more social needs were documented,integer,0 or 1
+contact_attempts,Number of documented contact attempts,integer,0 or greater
